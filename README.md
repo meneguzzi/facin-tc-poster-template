@@ -13,4 +13,9 @@ Créditos para @andrellsantos pelo logo da FACIN centralizado no topo.
 pdflatex poster.tex && pdflatex poster.tex && pdflatex poster.tex
 ```
 
-Quaisquer melhorias, por favor fazer um pull request neste repositório
+## Exemplos de pôsteres de meus alunos
+
+- [Andre dos Santos](meneguzzi-final-projects/posters/AndreLeonhardt_poster.pdf)
+- [Gabriel e Bruno](meneguzzi-final-projects/posters/GabrielBruno_poster.pdf)
+
+Caso você desenvolva quaisquer melhorias, por favor faça um pull request neste repositório
