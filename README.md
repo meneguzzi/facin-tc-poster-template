@@ -17,7 +17,7 @@ pdflatex poster.tex && pdflatex poster.tex && pdflatex poster.tex
 
 - [Andre dos Santos](https://github.com/meneguzzi/meneguzzi-final-projects/blob/master/posters/AndreLeonhardt_poster.pdf)
 - [Gabriel e Bruno](https://github.com/meneguzzi/meneguzzi-final-projects/blob/master/posters/GabrielBruno_poster.pdf)
-- [Martin e William(https://github.com/meneguzzi/meneguzzi-final-projects/blob/master/posters/MartinWilliam_poster.pdf)
+- [Martin e William](https://github.com/meneguzzi/meneguzzi-final-projects/blob/master/posters/MartinWilliam_poster.pdf)
 - [Matheus Redecker](https://github.com/meneguzzi/meneguzzi-final-projects/blob/master/posters/MatheusRedecker_poster.pdf)
 
 Caso você desenvolva quaisquer melhorias, por favor faça um pull request neste repositório
