@@ -8,7 +8,6 @@
 \usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
 \usepackage{times}
 \usepackage{graphicx}
-\graphicspath{{../}}
 \usepackage{booktabs}
 \usepackage[font=small,labelfont=bf]{caption}
 \usepackage{amsfonts, amsmath, amsthm, amssymb, marvosym}
@@ -18,7 +17,16 @@
 \usepackage{xspace}
 \usepackage[svgnames,usenames,dvipsnames]{xcolor}
 
+\usepackage[brazil]{babel}
+% \renewcommand{\tablename}{Tabela}
+% \renewcommand{\figurename}{Figura}
+
+% ---
+% Formatação de código-fonte
+% ---
 \usepackage{listings}
+% Comentar abaixo se for usar inglês.
+\renewcommand{\lstlistingname}{Listagem}
 \usepackage{listingsutf8}
 
 \lstset{literate=
@@ -52,16 +60,7 @@
 	showtabs=false,                  
 	tabsize=2
 }
-\renewcommand{\lstlistingname}{Código}
-\renewcommand{\tablename}{Tabela}
-\renewcommand{\figurename}{Figura}
 \newcommand\itemadjust{\itemsep.5em \parskip0pt \parsep0pt}
-
-% ---
-% Formatação de código-fonte
-% ---
-\usepackage{listings}
-
 
 
 
@@ -258,6 +257,7 @@
 %---------------------------------------------------------------
 %	REFERENCES
 %---------------------------------------------------------------
+% Descomentar abaixo caso queira usar referências bibliográficas no poster
 %\vspace{-10mm}
 %\large
 %\color{NavyBlue}

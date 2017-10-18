@@ -11,6 +11,9 @@
 *.cb
 *.cb2
 
+.*.lb
+a0header.ps
+
 ## Intermediate documents:
 *.dvi
 *-converted-to.*
