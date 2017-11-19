@@ -1,108 +1,22 @@
-\documentclass[a0,portrait]{a0poster}
-
-\usepackage{multicol}
-\columnsep=100pt
-\columnseprule=3pt
-
-\usepackage{ragged2e}
-\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
-\usepackage{times}
-\usepackage{graphicx}
-\usepackage{booktabs}
-\usepackage[font=small,labelfont=bf]{caption}
-\usepackage{amsfonts, amsmath, amsthm, amssymb, marvosym}
-\usepackage{wrapfig}
-\usepackage{enumitem}
-\usepackage{fancyvrb}
-\usepackage{xspace}
-\usepackage[svgnames,usenames,dvipsnames]{xcolor}
+\documentclass[a0,portrait]{lab-poster}
 
 \usepackage[brazil]{babel}    % Configuração de Linguagem (comentar para inglês)
 % \renewcommand{\tablename}{Tabela}
 % \renewcommand{\figurename}{Figura}
 
-% ---
-% Formatação de código-fonte
-% ---
-\usepackage{listings}
-% Comentar abaixo se for usar inglês.
-\renewcommand{\lstlistingname}{Listagem}
-\usepackage{listingsutf8}
+% \newcommand\itemadjust{\itemsep.5em \parskip0pt \parsep0pt}
 
-\lstset{literate=
-	{ã}{{\~a}}1 {ẽ}{{\~e}}1 {ĩ}{{\~i}}1 {õ}{{\~o}}1 {ũ}{{\~u}}1
-	{Ã}{{\~A}}1 {Ẽ}{{\~E}}1 {Ĩ}{{\~I}}1 {Õ}{{\~O}}1 {Ũ}{{\~U}}1	
-	{á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
-	{Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
-	{à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
-	{À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
-	{ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
-	{Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
-	{â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
-	{Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
-	{œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
-	{ű}{{\H{u}}}1 {Ű}{{\H{U}}}1 {ő}{{\H{o}}}1 {Ő}{{\H{O}}}1
-	{ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
-	{€}{{\EUR}}1 {£}{{\pounds}}1
-}
+\title{Seu Título Aqui}
+\author{Nome do Aluno 1, Nome do Aluno2}
+\major{Ciência da Computação}
+\advisor{Nome do Orientador}
 
-\lstdefinestyle{codeStyle}{
-	commentstyle=\color{black},
-	basicstyle=\ttfamily\footnotesize,
-	breakatwhitespace=false,         
-	breaklines=true,                 
-	captionpos=b,                    
-	keepspaces=true,                 
-	numbers=left,                    
-	numbersep=5pt,                  
-	showspaces=false,                
-	showstringspaces=false,
-	showtabs=false,                  
-	tabsize=2
-}
-\newcommand\itemadjust{\itemsep.5em \parskip0pt \parsep0pt}
-
-
-
+\themecolor{NavyBlue}
+\unilogo{fig/pucrs-logo.pdf}
+\lablogo{fig/facin-logo.pdf}
 
 \begin{document}
-
-%---------------------------------------------------------------
-%	POSTER HEADER 
-%---------------------------------------------------------------
-\begin{minipage}[c]{\linewidth}
-	\vspace{0.1cm}
-	\noindent\makebox[\textwidth][c]{
-		
-	\begin{minipage}[c]{0.15\linewidth}
-		\begin{center}
-			\includegraphics[width=9cm]{fig/pucrs-logo.pdf}
-		\end{center}
-	\end{minipage}
-	
-	\begin{minipage}[c]{0.70\linewidth}
-		\centering
-		\veryHuge \color{NavyBlue} 
-		\textbf{Seu Título Aqui}\\
-		
-		\color{Black}
-		\huge \textbf{Nome do Aluno, Nome do Aluno}\\
-		\Large \textbf{Orientador: Nome do Orientador}\\
-		Curso de Nome do Curso\\ %Sistemas de Informação, Ciência da Computação, Engenharia de Computação, Engenharia de Software
-		% Pontifícia Universidade Católica do Rio Grande do Sul\\
-		\Large \Letter ~ \texttt{nome.do.aluno@acad.pucrs.br}\\
-	\end{minipage}
-	
-	\begin{minipage}[c]{0.15\linewidth}
-		\begin{center}
-			\includegraphics[width=9cm]{fig/facin-logo.pdf}
-		\end{center}
-	\end{minipage}}
-	\\[0.1cm]%
-% A bit of extra whitespace between the header and poster content
-\end{minipage}
-
-\vspace{1cm}
+\maketitle
 
 %---------------------------------------------------------------
 
@@ -110,9 +24,9 @@
 %---------------------------------------------------------------
 %	MOTIVAÇÃO
 %---------------------------------------------------------------
-\color{NavyBlue}
-\section*{\huge Seção 1}
-\color{Black}
+% \color{NavyBlue}
+\section*{Seção 1}
+% \color{Black}
 \Large
 \justifying
 
@@ -125,9 +39,7 @@
 %---------------------------------------------------------------
 %   AGENTES
 %---------------------------------------------------------------
-\color{NavyBlue}
 \section*{\huge Seção 2}
-\color{Black}
 
 \begin{itemize}
 	\item Idéia 1; e
@@ -137,9 +49,7 @@
 %---------------------------------------------------------------
 %	AgentSpeak(L)
 %---------------------------------------------------------------
-\color{NavyBlue}
 \section*{\huge Seção 3}
-\color{Black}
 
 \begin{itemize}
 	\item É uma linguagem abstrata de programação orientada a agentes baseada na arquitetura BDI;
@@ -154,7 +64,7 @@
 \begin{itemize}
 	\item Mais idéias...:
 	\begin{enumerate}
-		[leftmargin=2em]\itemadjust
+		% [leftmargin=2em]\itemadjust
 		\item Idéia 1;
 		\item Idéia 2; 
 		\item Idéia 3; e
@@ -172,17 +82,12 @@
 \end{center}	
 
 
-%---------------------------------------------------------------
-%	AgentSpeak(Py)
-%---------------------------------------------------------------
-\color{NavyBlue}
-\section*{\huge Seção 3}
-\color{Black}
+\section*{Seção 3}
 
 \begin{itemize}
 	\item Mais idéias...:
 	\begin{enumerate}
-		[leftmargin=2em]\itemadjust
+		% [leftmargin=2em]\itemadjust
 		\item Idéia 1;
 		\item Idéia 2; 
 		\item Idéia 3; e
@@ -243,15 +148,22 @@
 	\end{lstlisting}
 \end{minipage}
 
-%---------------------------------------------------------------
-%	Tecnologias Utilizadas
-%---------------------------------------------------------------
-\color{NavyBlue}
 \section*{\huge Seção 4}
-\color{Black}
-
-
-
+      
+Tamanho atual das fontes:
+\begin{itemize}
+	\item {\tiny \verb|\tiny| Font Size: \showfontsize}
+	\item {\scriptsize \verb|\scriptsize| Font Size: \showfontsize}
+	\item {\footnotesize \verb|\footnotesize| Font Size: \showfontsize}
+	\item {\small \verb|\small| Font Size: \showfontsize}
+	\item {\normalsize \verb|\normalsize| Font Size: \showfontsize}
+	\item {\large \verb|\large| Font Size: \showfontsize}
+	\item {\Large \verb|\Large| Font Size: \showfontsize}
+	\item {\LARGE \verb|\LARGE| Font Size: \showfontsize}
+	\item {\huge \verb|\huge| Font Size: \showfontsize}
+	\item {\Huge \verb|\Huge| Font Size: \showfontsize}
+	\item {\veryHuge \verb|\veryHuge| Font Size: \showfontsize}
+\end{itemize}
 
 
 %---------------------------------------------------------------

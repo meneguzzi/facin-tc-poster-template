@@ -13,6 +13,11 @@ Créditos para @andrellsantos pelo logo da FACIN centralizado no topo.
 pdflatex poster.tex && pdflatex poster.tex && pdflatex poster.tex
 ```
 
+## Documentos Base
+
+- Este modelo foi construído sobre a classe [a0poster](http://tug.ctan.org/tex-archive/macros/latex/contrib/a0poster/)
+- [Mini tutorial das opções de a0poster](http://www.eng.auburn.edu/~reevesj/Classes/ELEC6970-latex/posters/BEAMERPOSTER.pdf), além de outras opções de formatação de pôsteres com outras classes
+
 ## Exemplos de pôsteres de meus alunos
 
 - [Andre dos Santos](https://github.com/meneguzzi/meneguzzi-final-projects/blob/master/posters/AndreLeonhardt_poster.pdf)
