@@ -80,11 +80,13 @@
 % ================
 
 % Who's the advisor
-\def\@advisor{None}
+% \def\@advisor{None}
+\global\let\@advisor\@empty
 \newcommand{\advisor}[1]{\def\@advisor{#1}}
 
 %Which Course this is
-\def\@major{Ciência da Computação}
+\global\let\@major\@empty
+% \def\@major{Ciência da Computação}
 %Sistemas de Informação, Ciência da Computação, Engenharia de Computação, Engenharia de Software
 \newcommand{\major}[1]{\def\@major{#1}}
 
@@ -158,13 +160,21 @@
 %	
 	\begin{minipage}[c]{0.70\linewidth}%
 		\centering%
-		\veryHuge \color{NavyBlue}%
+		\veryHuge \color{\@themecolor}%
 		\textbf{\@title}\\%
 		%
 		\color{Black}%
 		\huge \textbf{\@author}\\%
+		\ifx\@advisor\@empty%
+			\relax%
+		\else%
 		\Large \textbf{Orientador: \@advisor}\\%
+		\fi%
+		\ifx\@major\@empty%
+		\relax%
+		\else%
 		\@major\\%
+		\fi
 		% Pontifícia Universidade Católica do Rio Grande do Sul\\
 		\Large \Letter ~ \texttt{\@email}\\%
 	\end{minipage}%
